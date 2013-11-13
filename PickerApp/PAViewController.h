@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PAViewController : UIViewController
-
+@interface PAViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate>
+@property (weak, nonatomic) IBOutlet UITextField *usdTextField;
+@property (weak, nonatomic) IBOutlet UILabel *resultLabel;
+@property (weak, nonatomic) IBOutlet UIPickerView *pickerView;
+@property (strong, nonatomic) NSArray *exchangeRates;
 @end
